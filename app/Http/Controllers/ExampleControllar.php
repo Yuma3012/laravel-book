@@ -13,7 +13,7 @@ class ExampleControllar extends Controller
     }
 
     public function example()
-    {   
+    {
             $examples = Example::all();
             $examples = Example::find(1);
             $examples = Example::where('id', 1)->get();
