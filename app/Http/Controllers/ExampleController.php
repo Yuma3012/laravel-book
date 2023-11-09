@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Example;
 use Illuminate\Http\Request;
 
-class ExampleControllar extends Controller
+class ExampleController extends Controller
 {
     public function index()
     {
@@ -13,7 +13,7 @@ class ExampleControllar extends Controller
     }
 
     public function example()
-        {   
+    {
             $examples = Example::all();
             $examples = Example::find(1);
             $examples = Example::where('id', 1)->get();
